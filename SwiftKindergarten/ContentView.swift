@@ -9,13 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                NavigationLink {
+                    Lesson1View()
+                } label: {
+                    LessonRow(
+                        title: "Lesson 1",
+                        subtitle: "変数について"
+                    )
+                }
+            }
+            .navigationTitle("✏️ ホーム")
         }
-        .padding()
+    }
+}
+
+struct LessonRow: View {
+    let title: String
+    let subtitle: String
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(title)
+                .font(.headline)
+            Text(subtitle)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+        }
     }
 }
 
