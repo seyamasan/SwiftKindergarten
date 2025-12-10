@@ -6,6 +6,9 @@
 //
 //  初心者向けに作っているため、あまり言語に依存しないような書き方にしています。
 
+import SwiftUI
+
+@Observable
 class Lesson1 {
     // 修飾子をつけない場合はinternal
     // 同一モジュール内なら参照可能

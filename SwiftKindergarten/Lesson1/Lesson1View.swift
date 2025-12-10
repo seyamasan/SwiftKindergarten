@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct Lesson1View: View {
+    @State private var lesson1 = Lesson1()
+    
     var body: some View {
-        
-        Text("Lesson1")
-        
+        Text(self.lesson1.constText1)
         .navigationTitle("Lesson1")
     }
 }
