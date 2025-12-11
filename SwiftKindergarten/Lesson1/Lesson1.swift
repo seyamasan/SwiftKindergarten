@@ -6,7 +6,7 @@
 //
 //  初心者向けに作っているため、あまり言語に依存しないような書き方にしています。
 
-import SwiftUI
+import Observation
 
 @Observable
 class Lesson1 {
