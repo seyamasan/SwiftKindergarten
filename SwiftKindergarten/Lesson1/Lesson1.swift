@@ -27,7 +27,7 @@ class Lesson1 {
         return self.count
     }
     
-    func setCount(value: Int) {
-        self.count = value
+    func countUp() {
+        self.count += 1
     }
 }
