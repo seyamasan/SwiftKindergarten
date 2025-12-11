@@ -17,17 +17,17 @@ class Lesson1 {
     
     // privateはこのクラスからのみ参照可能
     private let constText2: String = "プライベートメンバ定数"
-    private var varText2: String = "プライベートメンバ変数"
+    private var count: Int = 0
     
     func getConstText2() -> String {
         return self.constText2
     }
     
-    func getVarText2() -> String {
-        return self.varText2
+    func getCount() -> Int {
+        return self.count
     }
     
-    func setVarText2(value: String) {
-        self.varText2 = value
+    func setCount(value: Int) {
+        self.count = value
     }
 }
