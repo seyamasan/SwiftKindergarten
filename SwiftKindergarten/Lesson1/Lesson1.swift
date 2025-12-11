@@ -12,11 +12,11 @@ import Observation
 class Lesson1 {
     // 修飾子をつけない場合はinternal
     // 同一モジュール内なら参照可能
-    let constText1: String = "メンバ定数" // 定数なので再代入できない
+    @ObservationIgnored let constText1: String = "メンバ定数" // 定数なので再代入できない
     var varText1: String = "メンバ変数" // 変数なので再代入できる
     
     // privateはこのクラスからのみ参照可能
-    private let constText2: String = "プライベートメンバ定数"
+    @ObservationIgnored private let constText2: String = "プライベートメンバ定数"
     private var count: Int = 0
     
     func getConstText2() -> String {
