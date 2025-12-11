@@ -19,9 +19,6 @@ class Lesson1 {
     private let constText2: String = "プライベートメンバ定数"
     private var varText2: String = "プライベートメンバ変数"
     
-    static let staticConstText: String = "スタティックメンバ定数"
-    static var staticVarText: String = "スタティックメンバ変数"
-    
     func getConstText2() -> String {
         return self.constText2
     }
