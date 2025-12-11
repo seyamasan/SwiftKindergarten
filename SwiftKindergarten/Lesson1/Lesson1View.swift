@@ -16,7 +16,7 @@ struct Lesson1View: View {
             Divider()
             Text("\(self.lesson1.getCount())回変更されたプライベートメンバ変数")
             Button("カウントする") {
-                self.lesson1.countUp()
+                self.lesson1.increment()
             }
             Divider()
             Text("\(Lesson1Static.staticConstText)を表示しています。")
