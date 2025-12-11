@@ -9,13 +9,14 @@ import SwiftUI
 
 struct Lesson1View: View {
     @State private var lesson1 = Lesson1()
-    @State private var count = 0
     
     var body: some View {
         VStack(spacing: 32) {
-            Text("\(self.count)回変更された\(self.lesson1.getVarText2())")
-            Button("変更する") {
-                self.count += 1
+            Text("\(self.lesson1.getConstText2())を表示しています。")
+            Divider()
+            Text("\(self.lesson1.getCount())回変更されたプライベートメンバ変数")
+            Button("カウントする") {
+                self.lesson1.countUp()
             }
         }
         .navigationTitle("Lesson1")
