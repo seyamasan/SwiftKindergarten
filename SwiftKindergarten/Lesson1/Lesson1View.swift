@@ -18,6 +18,8 @@ struct Lesson1View: View {
             Button("カウントする") {
                 self.lesson1.countUp()
             }
+            Divider()
+            Text("\(Lesson1Static.staticConstText)を表示しています。")
         }
         .navigationTitle("Lesson1")
     }
