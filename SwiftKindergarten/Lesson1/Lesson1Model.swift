@@ -18,6 +18,14 @@ class Lesson1Model: ObservableObject {
     private let constText2: String = "プライベートメンバ定数"
     @Published private var count: Int = 0
     
+    init() {
+        print("\(self) initialized")
+    }
+    
+    deinit {
+        print("\(self) deinitialized")
+    }
+    
     func getConstText2() -> String {
         return self.constText2
     }
