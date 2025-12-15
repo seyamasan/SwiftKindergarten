@@ -1,5 +1,5 @@
 //
-//  Lesson1.swift
+//  Lesson1Model.swift
 //  SwiftKindergarten
 //
 //  Created by 瀬山皐太 on 2025/12/09.
@@ -8,7 +8,7 @@
 
 import Combine
 
-class Lesson1: ObservableObject {
+class Lesson1Model: ObservableObject {
     // 修飾子をつけない場合はinternal
     // 同一モジュール内なら参照可能
     let constText1: String = "メンバ定数" // 定数なので再代入できない

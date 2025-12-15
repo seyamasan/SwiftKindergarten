@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct Lesson1View: View {
-    @StateObject  private var lesson1 = Lesson1()
+    @StateObject  private var model = Lesson1Model()
     
     var body: some View {
         VStack(spacing: 32) {
-            Text("\(self.lesson1.getConstText2())を表示しています。")
+            Text("\(self.model.getConstText2())を表示しています。")
             Divider()
-            Text("\(self.lesson1.getCount())回変更されたプライベートメンバ変数")
+            Text("\(self.model.getCount())回変更されたプライベートメンバ変数")
             Button("カウントする") {
-                self.lesson1.increment()
+                self.model.increment()
             }
             Divider()
             Text("\(Lesson1Static.staticConstText)を表示しています。")
