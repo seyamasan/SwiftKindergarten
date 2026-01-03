@@ -7,6 +7,6 @@
 //  初心者向けに作っているため、あまり言語に依存しないような書き方にしています。
 
 class Lesson1Static {
-    static let staticConstText: String = "スタティックメンバ定数"
+    static let countThreshold: Int = 10
     static var staticVarText: String = "スタティックメンバ変数"
 }

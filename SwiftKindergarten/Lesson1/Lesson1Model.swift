@@ -35,6 +35,10 @@ class Lesson1Model: ObservableObject {
     }
     
     func increment() {
+        guard self.count < Lesson1Static.countThreshold else {
+            return
+        }
+        
         self.count += 1
     }
 }

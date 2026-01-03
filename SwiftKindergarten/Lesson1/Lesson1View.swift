@@ -19,7 +19,7 @@ struct Lesson1View: View {
                 self.model.increment()
             }
             Divider()
-            Text("\(Lesson1Static.staticConstText)を表示しています。")
+            Text("\(Lesson1Static.staticVarText)を表示しています。")
         }
         .navigationTitle("Lesson1")
     }
