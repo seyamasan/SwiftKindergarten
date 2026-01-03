@@ -16,7 +16,7 @@ struct ContentView: View {
                 } label: {
                     LessonRow(
                         title: "Lesson 1",
-                        subtitle: "変数について"
+                        subtitle: "定数と変数について"
                     )
                 }
             }
