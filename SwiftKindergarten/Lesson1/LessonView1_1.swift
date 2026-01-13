@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Lesson1View: View {
+struct LessonView1_1: View {
     @StateObject  private var model = Lesson1Model()
     
     var body: some View {
@@ -26,5 +26,5 @@ struct Lesson1View: View {
 }
 
 #Preview {
-    Lesson1View()
+    LessonView1_1()
 }

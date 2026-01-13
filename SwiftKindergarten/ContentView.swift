@@ -13,7 +13,7 @@ struct ContentView: View {
             List {
                 Section {
                     NavigationLink {
-                        Lesson1View()
+                        LessonView1_1()
                     } label: {
                         LessonRow(
                             title: "Lesson 1-1",
