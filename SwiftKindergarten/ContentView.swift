@@ -35,9 +35,9 @@ struct LessonRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(title)
+            Text(self.title)
                 .font(.headline)
-            Text(subtitle)
+            Text(self.subtitle)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
         }
