@@ -12,16 +12,15 @@ struct LessonView1_1: View {
     
     var body: some View {
         VStack(spacing: 32) {
-            Text("\(self.model.getConstText2())を表示しています。")
-            Divider()
-            Text("\(self.model.getCount())回変更されたプライベートメンバ変数")
-            Button("カウントする") {
-                self.model.increment()
+            Button("計算結果を出力する1") {
+                
             }
             Divider()
-            Text("\(Lesson1Static.staticVarText)を表示しています。")
+            Button("計算結果を出力する2") {
+                
+            }
         }
-        .navigationTitle("Lesson1")
+        .navigationTitle("Lesson 1-1")
     }
 }
 
