@@ -11,13 +11,17 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink {
-                    Lesson1View()
-                } label: {
-                    LessonRow(
-                        title: "Lesson 1",
-                        subtitle: "定数と変数について"
-                    )
+                Section {
+                    NavigationLink {
+                        Lesson1View()
+                    } label: {
+                        LessonRow(
+                            title: "Lesson 1-1",
+                            subtitle: "定数と変数について"
+                        )
+                    }
+                } header: {
+                    Text("Lesson 1")
                 }
             }
             .navigationTitle("✏️ ホーム")
