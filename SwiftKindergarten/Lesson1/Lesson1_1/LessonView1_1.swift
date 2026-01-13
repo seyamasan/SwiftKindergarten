@@ -26,6 +26,7 @@ struct LessonView1_1: View {
         }
         .navigationTitle("Lesson 1-1")
         .task{
+            // なぜか宣言時にインスタンス化するとメモリリークするので
             self.cart = ShoppingCart()
         }
     }
