@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct LessonView1_1: View {
-    @StateObject  private var model = Lesson1Model()
-    
+struct LessonView1_1: View {    
     var body: some View {
         VStack(spacing: 32) {
             Button("計算結果を出力する1") {
