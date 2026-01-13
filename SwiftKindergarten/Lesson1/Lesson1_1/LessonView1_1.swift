@@ -7,18 +7,27 @@
 
 import SwiftUI
 
-struct LessonView1_1: View {    
+struct LessonView1_1: View {
+    @State var cart: ShoppingCart?
+    let priceList: [Double] = [100, 200, 300, 400]
+    
     var body: some View {
         VStack(spacing: 32) {
-            Button("計算結果を出力する1") {
-                
+            Button("💴計算結果を出力する1") {
+                print(self.cart?.summary1(priceList: self.priceList) ?? "0")
             }
             Divider()
-            Button("計算結果を出力する2") {
-                
+            Button("🛒カートに入れる") {
+                self.cart?.addItem(price: 100)
+            }
+            Button("💴計算結果を出力する2") {
+                print(self.cart?.summary2() ?? "0")
             }
         }
         .navigationTitle("Lesson 1-1")
+        .task{
+            self.cart = ShoppingCart()
+        }
     }
 }
 
