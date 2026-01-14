@@ -20,6 +20,14 @@ struct ContentView: View {
                             subtitle: "定数と変数について"
                         )
                     }
+                    NavigationLink {
+                        
+                    } label: {
+                        LessonRow(
+                            title: "Lesson 1-2",
+                            subtitle: "型について"
+                        )
+                    }
                 } header: {
                     Text("Lesson 1")
                 }
