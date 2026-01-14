@@ -21,7 +21,7 @@ struct ContentView: View {
                         )
                     }
                     NavigationLink {
-                        
+                        LessonView1_2()
                     } label: {
                         LessonRow(
                             title: "Lesson 1-2",
