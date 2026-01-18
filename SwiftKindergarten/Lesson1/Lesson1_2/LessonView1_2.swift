@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct LessonView1_2: View {
+    @State var lesson: Lesson1_2?
+    
     var body: some View {
         VStack(spacing: 32) {
-            Text("Lesson 1-2です。")
+            Button("💥文字化けした文字列を出力") {
+                self.lesson?.showGarbledText()
+            }
+            Divider()
         }
         .navigationTitle("Lesson 1-2")
+        .task {
+            self.lesson = Lesson1_2()
+        }
     }
 }
 
