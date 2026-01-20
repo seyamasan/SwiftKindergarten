@@ -12,10 +12,13 @@ struct LessonView1_2: View {
     
     var body: some View {
         VStack(spacing: 32) {
-            Button("💥文字化けした文字列を出力") {
+            Button("💥 文字化けした文字列を出力") {
                 self.lesson?.showGarbledText()
             }
             Divider()
+            Button("#️⃣ Intの最大値と最小値を出力") {
+                self.lesson?.showMaxAndMinInt()
+            }
         }
         .navigationTitle("Lesson 1-2")
         .task {
