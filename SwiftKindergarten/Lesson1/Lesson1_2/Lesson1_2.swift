@@ -54,7 +54,6 @@ class Lesson1_2 {
         // 32bitの場合
 //        let maxInt32: Int = 2147483647
 //        let minInt32: Int = -2147483648
-//        print("Intの最大値: \(maxInt32), 最小値: \(minInt32)")
         
         // オーバーフロー 32bit
 //        let overflowMaxInt32: Int = 2147483648
