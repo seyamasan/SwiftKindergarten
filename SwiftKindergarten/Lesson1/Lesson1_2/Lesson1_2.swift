@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct MaxMinIntModel {
+    let max: Int
+    let min: Int
+}
+
 class Lesson1_2 {
     init() {
         print("\(self) initialized")
@@ -26,16 +31,25 @@ class Lesson1_2 {
         }
     }
     
-    func showMaxAndMinInt() {
+    func clachOverflowInt() {
+        let maxAndMinInt = self.getMaxAndMinInt()
+        
+        // どちらもクラッシュする
+        _ = maxAndMinInt.max + 1
+        _ = maxAndMinInt.min - 1
+    }
+    
+    private func getMaxAndMinInt() -> MaxMinIntModel {
         // uname -m をターミナルで実行すると確認できる
         // 作者のMacのプロセッサは、x86_64で64bitなので
-        let maxInt64: Int = 9223372036854775807
-        let minInt64: Int = -9223372036854775808
-        print("Intの最大値: \(maxInt64), 最小値: \(minInt64)")
+        let maxInt64: Int = 9223372036854775807 // 最大値
+        let minInt64: Int = -9223372036854775808 // 最小値
         
         // オーバーフロー 64bit
 //        let overflowMaxInt64: Int = 9223372036854775808
 //        let overflowMinInt64: Int = -9223372036854775809
+        
+        return MaxMinIntModel(max: maxInt64, min: minInt64)
         
         // 32bitの場合
 //        let maxInt32: Int = 2147483647
@@ -45,5 +59,7 @@ class Lesson1_2 {
         // オーバーフロー 32bit
 //        let overflowMaxInt32: Int = 2147483648
 //        let overflowMinInt32: Int = -2147483649
+        
+//        return MaxMinIntModel(max: maxInt32, min: minInt32)
     }
 }
