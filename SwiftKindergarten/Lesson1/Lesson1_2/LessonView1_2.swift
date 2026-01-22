@@ -16,8 +16,8 @@ struct LessonView1_2: View {
                 self.lesson?.showGarbledText()
             }
             Divider()
-            Button("#️⃣ Intの最大値と最小値を出力") {
-                self.lesson?.showMaxAndMinInt()
+            Button("💥 Intの範囲を超えてクラッシュ") {
+                self.lesson?.clachOverflowInt()
             }
         }
         .navigationTitle("Lesson 1-2")
