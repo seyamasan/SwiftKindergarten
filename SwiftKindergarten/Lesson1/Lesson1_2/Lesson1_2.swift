@@ -31,7 +31,7 @@ class Lesson1_2 {
         }
     }
     
-    func clachOverflowInt() {
+    func clashOverflowInt() {
         let maxAndMinInt = self.getMaxAndMinInt()
         
         // どちらもクラッシュする

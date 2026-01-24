@@ -17,7 +17,7 @@ struct LessonView1_2: View {
             }
             Divider()
             Button("💥 Intの範囲を超えてクラッシュ") {
-                self.lesson?.clachOverflowInt()
+                self.lesson?.clashOverflowInt()
             }
         }
         .navigationTitle("Lesson 1-2")
