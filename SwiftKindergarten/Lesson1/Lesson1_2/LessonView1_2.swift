@@ -19,6 +19,14 @@ struct LessonView1_2: View {
             Button("💥 Intの範囲を超えてクラッシュ") {
                 self.lesson?.clashOverflowInt()
             }
+            Divider()
+            Button("🧮 Float型の値を計算") {
+                self.lesson?.calcFloatValue()
+            }
+            Divider()
+            Button("🧮 Double型の値を計算") {
+                self.lesson?.calcDoubleValue()
+            }
         }
         .navigationTitle("Lesson 1-2")
         .task {
