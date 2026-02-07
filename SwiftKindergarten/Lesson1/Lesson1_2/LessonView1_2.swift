@@ -11,7 +11,7 @@ struct LessonView1_2: View {
     @State var lesson: Lesson1_2?
     
     var body: some View {
-        VStack(spacing: 32) {
+        VStack(spacing: 28) {
             Button("💥 文字化けした文字列を出力") {
                 self.lesson?.showGarbledText()
             }
