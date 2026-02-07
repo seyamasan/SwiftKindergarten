@@ -72,6 +72,23 @@ class Lesson1_2 {
         print("\(elapsed)秒かかりました。")
     }
     
+    func showBoolBytes() {
+        // データのバッファ内の生のバイトにアクセス
+        withUnsafeBytes(of: true) { (bytes: UnsafeRawBufferPointer) in
+            print("trueのメモリ上の数値:")
+            bytes.forEach {
+                print($0)
+            }
+        }
+        
+        withUnsafeBytes(of: false) { (bytes: UnsafeRawBufferPointer) in
+            print("falseのメモリ上の数値:")
+            bytes.forEach {
+                print($0)
+            }
+        }
+    }
+    
     private func getMaxAndMinInt() -> MaxMinIntModel {
         // uname -m をターミナルで実行すると確認できる
         // 作者のMacのプロセッサは、x86_64で64bitなので

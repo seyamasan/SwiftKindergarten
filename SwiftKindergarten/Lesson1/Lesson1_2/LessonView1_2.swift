@@ -27,6 +27,10 @@ struct LessonView1_2: View {
             Button("🧮 Double型の値を計算") {
                 self.lesson?.calcDoubleValue()
             }
+            Divider()
+            Button("💾 Bool型のメモリ上の数値") {
+                self.lesson?.showBoolBytes()
+            }
         }
         .navigationTitle("Lesson 1-2")
         .task {
